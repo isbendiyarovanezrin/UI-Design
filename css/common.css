@@ -1,0 +1,27 @@
+.orange {
+  color: #f78065;
+}
+
+.bg-orange {
+  background-color: #f78065;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.white {
+  color: #fff;
+}
+
+.small {
+  font-size: 14px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
