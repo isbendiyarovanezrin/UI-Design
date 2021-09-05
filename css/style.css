@@ -67,8 +67,8 @@ h2 {
 }
 
 img.img-arrow {
-  left: 15px;
   position: relative;
+  left: 15px;
   bottom: 2px;
   width: 13px;
 }
