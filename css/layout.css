@@ -19,6 +19,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  background-color: #f78065;
+  color: #fff;
+}
+
 html {
   scroll-behavior: smooth;
 }
