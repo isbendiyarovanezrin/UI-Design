@@ -87,6 +87,11 @@ h2 {
   width: 13px;
 }
 
+.img-arrow:hover {
+  transform: translate(0, 2px) scale(1.2);
+  transition: transform 0.3s linear;
+}
+
 .img-person {
   position: relative;
   width: 28px;
@@ -98,6 +103,11 @@ h2 {
   position: absolute;
   left: 8%;
   top: 6%;
+  transition: transform 0.5s ease;
+}
+
+.cube-image:hover {
+  transform: rotate(100deg) scale(1.1);
 }
 
 p.opacity {
@@ -162,6 +172,12 @@ p.orange {
   font-weight: 500;
   font-size: 18px;
 }
+
+.aside-a:hover,
+.features-a:hover {
+  color: #cd939c;
+  transition: all 0.18s linear;
+}
 /* aside section end */
 
 /* footer section start */
@@ -189,6 +205,12 @@ li {
 
 .footer-link li {
   margin: 20px 0px;
+}
+
+.footer-link li a:hover,
+.footer-nav li a:hover {
+  color: #f78065;
+  transition: all 0.18s linear;
 }
 
 ul.footer-link {
