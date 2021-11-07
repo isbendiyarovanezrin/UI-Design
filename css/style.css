@@ -120,6 +120,11 @@ button {
   line-height: 0.4;
   opacity: 0.99;
   border: none;
+  transition: all 0.2s linear;
+}
+
+button:hover {
+  background-color: #000;
 }
 
 .img-globe,
