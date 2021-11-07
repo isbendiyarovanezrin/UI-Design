@@ -12,7 +12,11 @@ p {
 
 ol,
 ul {
-  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -30,7 +34,6 @@ body {
 }
 
 .container {
-  overflow: hidden;
   margin: 0 auto;
 }
 

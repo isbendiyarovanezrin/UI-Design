@@ -14,10 +14,6 @@ img {
   margin: 3px;
 }
 
-a {
-  text-decoration: none;
-}
-
 h1 {
   font-family: Merriweather;
   font-size: 40px;
@@ -30,6 +26,24 @@ h2 {
   font-size: 23px;
   line-height: 30px;
   letter-spacing: 0.2px;
+}
+
+/* loader */
+#loadingDiv {
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #fff;
+}
+
+.loader {
+  width: 90px;
+  height: 90px;
+  background: center / contain no-repeat url(../img/loader.gif);
 }
 
 /* hero section start */
@@ -224,6 +238,11 @@ hr {
     padding: 15px 40px;
     font-size: 22px;
   }
+
+  .loader {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -310,6 +329,11 @@ hr {
 
   hr {
     margin-right: 9px;
+  }
+
+  .loader {
+    width: 65px;
+    height: 65px;
   }
 }
 
@@ -451,6 +475,11 @@ hr {
 
   .footer-mobile {
     display: block;
+  }
+
+  .loader {
+    width: 50px;
+    height: 50px;
   }
 }
 /* media queries end */
