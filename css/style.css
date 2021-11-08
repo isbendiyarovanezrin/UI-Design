@@ -15,15 +15,13 @@ img {
 }
 
 h1 {
-  font-family: Merriweather;
-  font-size: 40px;
+  font: 600 40px Merriweather;
   line-height: 53px;
   letter-spacing: 0.2px;
 }
 
 h2 {
-  font-family: Merriweather;
-  font-size: 23px;
+  font: 23px Merriweather;
   line-height: 30px;
   letter-spacing: 0.2px;
 }
@@ -48,13 +46,10 @@ h2 {
 
 /* hero section start */
 .hero-image {
-  background-image: url(../img/Rectangle\ 1.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   position: relative;
   min-height: 600px;
   height: 100vh;
+  background: center / cover no-repeat url(../img/bg-img.png);
 }
 
 .hero-sec-title {
@@ -78,6 +73,7 @@ h2 {
   right: 8%;
   top: 6%;
   border-radius: 27px;
+  user-select: none;
 }
 
 .img-arrow {
@@ -101,6 +97,7 @@ h2 {
 
 .cube-image {
   position: absolute;
+  user-select: none;
   left: 8%;
   top: 6%;
   transition: transform 0.5s ease;
@@ -110,11 +107,15 @@ h2 {
   transform: rotate(100deg) scale(1.1);
 }
 
-p.opacity {
+.opacity {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  line-height: 23px;
   opacity: 0.6;
+}
+
+.hero-sec-p {
+  font-size: 18px;
+  width: 86%;
 }
 
 button {
@@ -125,7 +126,7 @@ button {
   padding: 25px 79px;
   margin-top: 15px;
   font-size: 22px;
-  font-weight: 540;
+  font-weight: 500;
   letter-spacing: 0.6px;
   line-height: 0.4;
   opacity: 0.99;
@@ -380,7 +381,7 @@ hr {
 
   .item {
     margin-bottom: 45px;
-    width: 90vw;
+    width: 85vw;
     height: auto;
   }
 
@@ -392,8 +393,7 @@ hr {
   .img {
     width: 40vw;
     height: auto;
-    margin: auto;
-    padding-bottom: 0px 6px 5px 0px;
+    margin: 12px auto;
   }
 
   .img-aside {
