@@ -131,6 +131,7 @@ button {
   line-height: 0.4;
   opacity: 0.99;
   border: none;
+  cursor: pointer;
   transition: all 0.2s linear;
 }
 
