@@ -139,6 +139,10 @@ button:hover {
   background-color: #000;
 }
 
+button:active {
+  transform: scale(0.98);
+}
+
 .img-globe,
 .btn-arrow {
   margin-right: 5px;
