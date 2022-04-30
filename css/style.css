@@ -1,4 +1,4 @@
-/* common */
+/* common start */
 #features-section,
 #article-section,
 #aside-section,
@@ -22,11 +22,11 @@ h1 {
 
 h2 {
   font: 23px Merriweather;
-  line-height: 30px;
   letter-spacing: 0.2px;
 }
+/* common end */
 
-/* loader */
+/* loader start */
 #loadingDiv {
   width: 100vw;
   height: 100vh;
@@ -35,7 +35,6 @@ h2 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  background-color: #fff;
 }
 
 .loader {
@@ -43,6 +42,7 @@ h2 {
   height: 90px;
   background: center / contain no-repeat url(../img/loader.gif);
 }
+/* loader end */
 
 /* hero section start */
 .hero-image {
@@ -59,7 +59,7 @@ h2 {
   bottom: 244px;
   margin-left: 60px;
   z-index: 1;
-  box-shadow: 0px 4px 100px rgb(0 0 0 / 10%);
+  box-shadow: 0 4px 100px #0000001a;
 }
 
 .hero-title {
@@ -97,7 +97,6 @@ h2 {
 
 .cube-image {
   position: absolute;
-  user-select: none;
   left: 8%;
   top: 6%;
   transition: transform 0.5s ease;
@@ -147,7 +146,7 @@ button:active {
 .btn-arrow {
   margin-right: 5px;
 }
-/* hero section start */
+/* hero section end */
 
 /* article section start */
 .article-p,
@@ -156,7 +155,7 @@ button:active {
 }
 
 .img {
-  margin: 0px 0px 10px 0px;
+  margin: 0 0 10px 0;
 }
 /* article section end */
 
@@ -186,6 +185,12 @@ p.orange {
 }
 /* aside section end */
 
+/* advantages section start */
+.h2-advantages {
+  margin-bottom: 50px;
+}
+/* advantages section end */
+
 /* footer section start */
 #footer {
   background-color: #f7f7f7;
@@ -210,17 +215,13 @@ li {
 }
 
 .footer-link li {
-  margin: 20px 0px;
+  margin: 20px 0;
 }
 
 .footer-link li a:hover,
 .footer-nav li a:hover {
   color: #f78065;
   transition: all 0.18s linear;
-}
-
-ul.footer-link {
-  margin-left: -41px;
 }
 
 .copyright {
@@ -236,7 +237,11 @@ hr {
 /* footer section end */
 
 /* media queries start */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1264px) {
+  .h2-advantages {
+    margin-bottom: 20px;
+  }
+
   .footer-link li a,
   .footer-nav li a,
   .copyright {
@@ -286,6 +291,10 @@ hr {
     margin-bottom: 60px;
   }
 
+  #article-section {
+    margin-top: -70px;
+  }
+
   .item {
     display: flex;
     flex-wrap: wrap;
@@ -293,9 +302,8 @@ hr {
     width: auto;
   }
 
-  .mb-40,
-  .mb-20 {
-    margin-bottom: 0;
+  .mb-40 {
+    margin-bottom: 20px;
   }
 
   p,
@@ -322,8 +330,7 @@ hr {
   .h1-features,
   .h1-advantages,
   .h1-aside {
-    margin: 0px;
-    padding: 0px;
+    padding: 0;
     font-size: 24px !important;
     line-height: 1.1;
   }
@@ -332,7 +339,7 @@ hr {
     width: auto;
     height: auto;
     padding: 5px;
-    margin: 70px 30px 0px 30px;
+    margin: 70px 30px 0 30px;
   }
 
   .hero-title {
@@ -370,24 +377,27 @@ hr {
   }
 }
 
-@media screen and (max-width: 630px) {
-  body {
-    overflow-x: hidden;
-  }
-
+@media screen and (max-width: 670px) {
   .row {
-    display: flex;
-    flex-direction: column;
     align-items: start;
+    flex-flow: column nowrap;
     width: auto;
     height: auto;
-    flex-wrap: nowrap;
   }
 
   .item {
     margin-bottom: 45px;
+    margin-left: 20px;
     width: 85vw;
-    height: auto;
+  }
+
+  #article-section {
+    margin-top: -90px;
+  }
+
+  #features-section,
+  #aside-section {
+    padding-left: 10px;
   }
 
   img {
@@ -419,9 +429,13 @@ hr {
     line-height: 1.4;
   }
 
-  .mb-20,
+  h1,
+  h2 {
+    margin-left: 5px;
+  }
+
   .mb-40 {
-    margin-bottom: 0px;
+    margin-bottom: 13px;
   }
 
   .img-arrow {
@@ -441,8 +455,8 @@ hr {
   .mobile-p,
   .mobile-h2,
   .mobile-a {
-    margin: 0px !important;
-    padding: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .mobile-item {
@@ -452,7 +466,7 @@ hr {
   }
 
   .log-in {
-    margin: auto;
+    left: 8%;
   }
 
   .cube-image {
@@ -466,7 +480,7 @@ hr {
 
   .hero-sec-title {
     padding: 5px;
-    margin: 70px 30px 0px 30px;
+    margin: 70px 30px 0 30px;
     width: auto;
     height: auto;
   }
@@ -476,11 +490,11 @@ hr {
   }
 
   .footer-container {
-    height: 1020px;
+    padding: 55px 0 45px;
   }
 
   li {
-    margin: 7px 7px 7px 0px !important;
+    margin: 7px 7px 7px 0 !important;
   }
 
   .footer-link li a,
@@ -490,28 +504,46 @@ hr {
 
   .footer-nav li,
   .footer-nav {
-    padding: 0px;
+    padding: 0;
     display: block;
   }
 
   .item-nav li a,
   .item-copyright {
-    width: 90vw;
+    width: 88vw;
     margin-left: 35px !important;
   }
 
   .copyright {
-    margin: 0px;
-    display: block;
+    margin-left: -13px !important;
   }
 
   .footer-mobile {
     display: block;
   }
 
+  .footer-mobile h1,
+  .footer-mobile h2 {
+    margin-left: 5px;
+  }
+
+  .footer-mobile .col-7 {
+    margin-left: -13px;
+  }
+
   .loader {
     width: 50px;
     height: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #article-section {
+    margin-top: -110px;
+  }
+
+  button {
+    padding: 15px 25px;
   }
 }
 /* media queries end */
